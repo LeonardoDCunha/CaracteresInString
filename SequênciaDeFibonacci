@@ -1,0 +1,33 @@
+// Pede ao usuário para informar um número
+let numero = parseInt(prompt("Informe um número inteiro:"));
+
+// Inicializa as variáveis para os primeiros dois valores da sequência
+let a = 0;
+let b = 1;
+
+// Inicializa uma variável para armazenar o resultado da soma de a e b
+let soma = 0;
+
+// Inicializa uma variável para armazenar se o número informado pertence ou não à sequência
+let pertence = false;
+
+// Percorre a sequência de Fibonacci até encontrar um número maior ou igual ao número informado
+while (soma <= numero) {
+    // Se a soma for igual ao número informado, o número pertence à sequência
+    if (soma === numero) {
+        pertence = true;
+        break;
+    }
+    
+    // Se a soma for menor que o número informado, calcula o próximo valor da sequência
+    soma = a + b;
+    a = b;
+    b = soma;
+}
+
+// Imprime uma mensagem indicando se o número pertence ou não à sequência
+if (pertence) {
+    console.log(numero + " pertence à sequência de Fibonacci.");
+} else {
+    console.log(numero + " não pertence à sequência de Fibonacci.");
+}
