@@ -1,3 +1,5 @@
+// Para inverter os caracteres de uma string em um programa em C#:
+
 using System;
 
 class Program {
@@ -21,3 +23,12 @@ class Program {
         Console.WriteLine("String invertida: " + invertida);
     }
 }
+
+
+//Neste código, primeiro foi definido a string original (ela pode ser fornecida pelo usuário ou definida no próprio código).
+//Em seguida, converti a string em uma matriz de caracteres para podermos operar nela.
+
+//Sendo assim, Ultilizei um loop for para inverter a ordem dos caracteres. 
+//A ideia é percorrer metade da matriz e trocar o primeiro caractere pelo último caractere, o segundo caractere pelo penúltimo caractere e assim por diante.
+
+//Por fim, converti o array de caracteres de volta para uma string usando o construtor "new string()" e imprimindo a string invertida no console.
